@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.navbar {
+  padding: .8rem;
+}
+
+/* Navbar brand logo sizing */
+.brand-logo{
+  height: 80px;
+  display: block;
+}
+
+@media (max-width: 992px){
+  .brand-logo{ height: 64px; }
+}
+
+@media (max-width: 576px){
+  .brand-logo{ height: 44px; }
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 420px; /* reduced height for a smaller hero like Aleenta */
+  object-fit: cover;
+}
+
+@media (max-width: 768px){
+  .carousel-inner img { height: 300px; }
+}
+
+@media (max-width: 576px){
+  .carousel-inner img { height: 220px; }
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  color: #222;
+  padding-bottom: 1rem;
+}
+
+/* Carousel arrow styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /* remove default small icons */
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 60px;
+}
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.8rem;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: rgba(0,0,0,0.45);
+  border-radius: 50%;
+  z-index: 5;
+}
+.carousel-control-prev { left: 10px; }
+.carousel-control-next { right: 10px; }
+.carousel-arrow:hover { background: rgba(0,0,0,0.6); }
+
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #563d7c;
+}
+
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-code {
+  color: #e54d26;
+
+}
+
+.fa-bold {
+  color: #563d7c;
+}
+
+.fa-css3 {
+  color: #2163af;
+}
+
+.fa-code, .fa-bold, .fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.amenity-icon {
+  font-size: 4.5em;
+  margin: 1rem;
+  color: #6648b1;
+}
+
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.gif {
+  max-width: 100%;
+}
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+/* Big map zoom */
+.map-modal {
+  max-width: 95vw;
+}
+
+.map-modal .modal-content {
+  background: #000;
+}
+
+.map-modal img {
+  width: 100%;
+  max-height: 92vh;
+  object-fit: contain;
+}
+
+
+/* QR code grid and images */
+.map-img { cursor: zoom-in; }
+.modal-img { width: 100%; height: auto; display: block; }
+.qr-grid { margin-top: 0.5rem; display:flex; gap:1rem; align-items:center; justify-content:center; }
+.qr-img { width: 180px; height: 180px; border: 1px solid #e6e6e6; background: #fff; padding: 8px; object-fit: contain; box-sizing: border-box; cursor: zoom-in; border-radius: 6px; }
+#modalQrImage { max-width: 90vw; width: 480px; height: auto; display:block; margin: 0 auto; }
+@media (max-width: 768px){ .qr-img { width: 200px; height: 200px; display:block; margin:0.5rem auto; } .qr-grid{ flex-direction:row; gap:2rem; justify-content:center; } }
+@media (max-width: 576px){ .qr-img { width: 220px; height: 220px; } .qr-grid{ flex-direction:column; } .footer-column{ text-align:center; padding-top:0.5rem; } }
+
+/* Footer column padding */
+.footer-column { padding: 0.5rem 1rem; }
+
+/* focus state for keyboard users */
+.qr-img:focus { outline: 3px solid rgba(102,72,177,0.5); }
+
+/* Make buttons more visible on focus for accessibility */
+.btn:focus, .btn:active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102,72,177,0.25);
+  outline: none;
+}
+
+/* Footer contact links */
+footer a { color: #d5d5d5; text-decoration: underline; }
+footer a:hover { color: #fff; text-decoration: none; }
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+
+.fa-facebook:hover,
+.fa-twitter:hover, 
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+/* Footer logo: match navbar brand sizes and ensure spacing */
+.footer-logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+@media (max-width: 992px){
+  .footer-logo { height: 64px; }
+}
+
+@media (max-width: 576px){
+  .footer-logo { height: 44px; }
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+
+  .carousel-caption h1 {
+    font-size: 350%
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: transform 0.5s ease;
+  transform: translateZ(0);
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip-path: inset(0 0 0 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Calendar removed */
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/* Villa gallery and booking button styles */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+.booking-btn {
+  margin-left: .5rem;
+}
+
+/* Responsive: Stack booking buttons on small screens and add mobile padding */
+@media (max-width: 576px) {
+  .booking-btn {
+    display: block;
+    width: 90%;
+    max-width: 320px;
+    margin: 0.5rem auto;
+  }
+  .card-img-top { height: 160px; }
+  .card-body { padding: 1rem; }
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
